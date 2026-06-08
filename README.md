@@ -6,7 +6,7 @@ A web app that highlights underrated local restaurants flying under the radar â€
 
 <!-- GIF -->
 
-
+![App Walkthrough](walkthrough.gif)
 
 
 ## âœ… Required Features
