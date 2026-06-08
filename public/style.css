@@ -1,0 +1,233 @@
+:root {
+  --accent: #e07b39;
+  --accent-light: #fdf0e6;
+  --card-radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background: #fafaf8;
+  color: #2d2d2d;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 2.5rem 0 2rem;
+  text-align: center;
+  border-bottom: 4px solid var(--accent);
+}
+
+.site-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  color: #a0aec0;
+  margin: 0.4rem 0 0;
+  font-size: 1rem;
+}
+
+.back-link {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: var(--accent); }
+
+.intro {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  color: #555;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #f0ede8;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.13);
+}
+
+.restaurant-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 1.2rem 1.4rem 1.4rem;
+}
+
+.card-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  color: #1a1a2e;
+}
+
+.neighborhood {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.must-try {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.2rem 0 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tag.cuisine { background: #e8f4f8; color: #2980b9; }
+.tag.price { background: #e8f8e8; color: #27ae60; }
+.tag.vibe { background: var(--accent-light); color: var(--accent); }
+
+.detail-page {
+  max-width: 800px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.detail-hero {
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.detail-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-content h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: white;
+  border: 1px solid #f0ede8;
+  border-radius: var(--card-radius);
+  padding: 1.4rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.detail-item .label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #999;
+}
+
+.detail-item span:last-child {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.detail-description {
+  background: white;
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid #f0ede8;
+}
+
+.detail-description h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+
+.detail-description p {
+  line-height: 1.75;
+  color: #444;
+}
+
+.site-footer {
+  background: #1a1a2e;
+  color: #a0aec0;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.not-found {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  color: var(--accent);
+  margin: 0;
+  line-height: 1;
+}
+
+.not-found h2 { font-size: 1.8rem; color: #1a1a2e; }
+.not-found p { color: #777; margin-bottom: 2rem; }
+
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 2rem; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .detail-img { height: 240px; }
+}
