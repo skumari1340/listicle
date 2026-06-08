@@ -7,6 +7,8 @@ A web app that highlights underrated local restaurants flying under the radar â€
 <!-- GIF -->
 
 
+
+
 ## âœ… Required Features
 
 - [x] The web app uses only HTML, CSS, and JavaScript without a frontend framework
