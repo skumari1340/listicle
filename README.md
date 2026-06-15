@@ -7,6 +7,9 @@ A web app that highlights underrated local restaurants flying under the radar â€
 <!-- GIF -->
 
 ![App Walkthrough](walkthrough.gif)
+Walkthrough GIF 2:-
+<img width="640" height="361" alt="walkthrough" src="https://github.com/user-attachments/assets/952f215f-088d-447f-9740-839f349bfac4" />
+
 
 ## âœ… Required Features
 
