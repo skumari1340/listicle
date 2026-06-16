@@ -41,8 +41,8 @@ Walkthrough GIF 2:-
    npm install
 ```
 
-2. Create a `.env` file in the project root with your Render PostgreSQL connection string: DATABASE_URL=postgresql://hidden_gems_user:ovHMfU2zyTjtJmer8T9jAzb67c4NUG9A@dpg-d8no0ohkh4rs73fdevo0-a.virginia-postgres.render.com/hidden_gems
-PORT=3000 3. Set up and seed the database (run once):
+2. Create a `.env` file in the project root with your Render PostgreSQL connection string:
+3. Set up and seed the database (run once):
 
 ```bash
    node server/config/setupDB.js
